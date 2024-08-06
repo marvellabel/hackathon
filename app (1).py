@@ -16,7 +16,7 @@ db = client.test
 collection = db.coordinates
 
 app = Flask(__name__, template_folder="templates")
-app.secret_key = '2ybtqKzNbwg_lItUV5ubCn98Cow=' #correct
+app.secret_key = 'notavailable' 
 app.config['SESSION_TYPE'] = 'filesystem'
 
 Session(app)
@@ -26,7 +26,7 @@ mongo_uri = os.getenv("MONGO_URI")
 client = pymongo.MongoClient(mongo_uri)
 
 
-key = "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" #notcorrect
+key = "not available" 
 GoogleMaps(
     app,
     key=key
